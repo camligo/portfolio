@@ -1,0 +1,15 @@
+@use "../../styles/mixins.scss" as m;
+
+.navTop {
+  @include m.phone {
+    display: none;
+  }
+}
+
+.hamburgerNav {
+  display: none;
+
+  @include m.phone {
+    display: block;
+  }
+}

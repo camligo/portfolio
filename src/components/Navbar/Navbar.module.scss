@@ -1,0 +1,28 @@
+@use "../../styles/mixins.scss" as m;
+
+.navTop {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1.4rem;
+  border-bottom: 1px solid grey;
+
+  @include m.phone {
+    display: none;
+  }
+
+  .navMenu {
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    list-style-type: none;
+
+    .navItem {
+      margin-left: 1rem;
+
+      .navLink {
+        text-decoration: none;
+      }
+    }
+  }
+}
