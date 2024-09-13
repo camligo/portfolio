@@ -1,11 +1,11 @@
 @use "../../styles/mixins.scss" as m;
+@use "../../styles/variables.scss" as v;
 
 .navTop {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 1.4rem;
-  border-bottom: 1px solid grey;
 
   @include m.phone {
     display: none;
@@ -22,7 +22,9 @@
 
       .navLink {
         text-decoration: none;
+        font-family: v.$font;
         color: white;
+        font-weight: 200;
       }
     }
   }

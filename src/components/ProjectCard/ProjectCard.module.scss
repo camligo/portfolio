@@ -3,32 +3,102 @@
 
 .projectContainer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  margin: 20px;
+  gap: 20px;
+  background: white;
 
-  @include m.phone {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    margin: 20px;
-  }
-
-  h3 {
-    font-family: v.$fontHeading;
-    text-transform: uppercase;
-    letter-spacing: 1.1px;
-    margin-bottom: 10px;
+  @include m.laptop {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "image text";
+    gap: 40px;
+    border-radius: 5px;
+    height: 300px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
   }
 
   .image {
-    height: auto;
-    width: 200px;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+    grid-area: image;
+
+    @include m.laptop {
+      width: 250px;
+      margin-bottom: 0;
+    }
   }
 
-  .description {
-    margin-block: 20px;
-  }
-
-  .projectLinks {
+  .textContainer {
+    grid-area: text;
     display: flex;
-    gap: 0.4rem;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+
+    @include m.laptop {
+      align-items: flex-start;
+    }
+  }
+}
+
+.projectContainerReversed {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  margin: 20px;
+
+  @include m.laptop {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "text image";
+    box-shadow: 0px 3px 16px rgba(0,0,0,0.1);
+    height: 300px;
+    border-radius: 5px;
+  }
+
+  .image {
+    grid-area: image;
+  }
+
+  .textContainer {
+    grid-area: text;
+  }
+}
+
+.projectTitle {
+  font-family: v.$fontHeading;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  margin-bottom: 10px;
+  text-align: center;
+
+  @include m.laptop {
+    text-align: left;
+  }
+}
+
+.description {
+  margin-block: 20px;
+  text-align: center;
+
+  @include m.laptop {
+    text-align: left;
+  }
+}
+
+.projectLinks {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: v.$font;
+
+  @include m.laptop {
+    justify-content: flex-start;
   }
 }

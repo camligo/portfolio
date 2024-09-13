@@ -4,7 +4,7 @@ import styles from "./About.module.scss"
 const About = () => {
   return (
     <div className={styles.aboutContainer}>
-      <Title>About me</Title>
+      <Title textAlign="left">About me</Title>
         <p>
           <span className={styles.aboutText}>
             I'm Camilla, an urban planner turned junior web developer based in Sydney.

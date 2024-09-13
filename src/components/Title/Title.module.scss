@@ -1,8 +1,22 @@
 @use "../../styles/variables.scss" as v;
+@use "../../styles/mixins.scss" as m;
 
-h2 {
+.title {
   font-family: v.$fontHeading;
   margin-block: 1rem;
-  text-align: center;
   text-transform: uppercase;
+  font-weight: 500;
+  font-size: 32px;
+
+  @include m.phone {
+    font-size: 28px;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .left {
+    text-align: left;
+  }
 }
