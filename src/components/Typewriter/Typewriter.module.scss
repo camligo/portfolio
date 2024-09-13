@@ -1,5 +1,9 @@
 @use "../../styles/variables.scss" as v;
 
+h1 {
+  font-family: v.$fontHeading;
+}
+
 .textContainer {
   display: flex;
   flex-direction: column;

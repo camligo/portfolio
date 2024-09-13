@@ -29,7 +29,7 @@ const Typewriter = () => {
 
   return (
     <div className={styles.textContainer}>
-        <h1>Camilla Ligovic</h1>
+      <h1>Camilla Ligovic</h1>
       <h1 id={styles.typewriterText}>
         <span id={styles.typewriter}>{string.slice(0, index)}</span>
         <span id={styles.cursor}>|</span>

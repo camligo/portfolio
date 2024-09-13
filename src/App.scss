@@ -1,14 +1,22 @@
+@use "./styles/variables.scss" as v;
+@use "./styles/mixins.scss" as m;
+
 #home {
   display: flex;
-  height: 100%;
   align-items: center;
   justify-content: flex-start;
   height: 100vh;
+  width: 75%;
+
+  @include m.phone {
+    width: 80%;
+  }
 }
 
 #about {
   display: flex;
   justify-content: center;
+  height: 75vh;
 }
 
 #contact, #skills {
@@ -17,4 +25,9 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+
+p {
+  font-family: v.$font;
+  letter-spacing: 1.05px;
 }

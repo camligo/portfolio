@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer'
 import About from './components/About/About'
 import Skills from './components/Skills/Skills'
 import Contact from './components/Contact/Contact'
+import Projects from './components/Projects/Projects'
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
       </SectionWrapper>
       <SectionWrapper>
         <div id='projects'>
-          <Title>Projects</Title>
+          <Projects />
         </div>
       </SectionWrapper>
 
