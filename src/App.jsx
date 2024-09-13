@@ -1,14 +1,19 @@
-import Navbar from './components/Navbar/Navbar'
 import SectionWrapper from './components/SectionWrapper/SectionWrapper'
 import Title from './components/Title/Title'
 import './App.scss'
 import Header from './components/Header/Header'
+import Typewriter from './components/Typewriter/Typewriter'
 
 function App() {
 
   return (
     <>
       <Header />
+      <SectionWrapper>
+        <div id='home'>
+          <Typewriter />
+        </div>
+      </SectionWrapper>
       <SectionWrapper>
         <div id='projects'>
           <Title>Projects</Title>
