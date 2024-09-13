@@ -3,6 +3,10 @@ import Title from './components/Title/Title'
 import './App.scss'
 import Header from './components/Header/Header'
 import Typewriter from './components/Typewriter/Typewriter'
+import Footer from './components/Footer/Footer'
+import About from './components/About/About'
+import Skills from './components/Skills/Skills'
+import Contact from './components/Contact/Contact'
 
 function App() {
 
@@ -17,29 +21,27 @@ function App() {
       <SectionWrapper>
         <div id='projects'>
           <Title>Projects</Title>
-
         </div>
       </SectionWrapper>
 
       <SectionWrapper>
         <div id='about'>
-          <Title>About</Title>
-
+          <About />
         </div>
       </SectionWrapper>
 
       <SectionWrapper>
         <div id='skills'>
-          <Title>Skills</Title>
+          <Skills />
         </div>
       </SectionWrapper>
 
       <SectionWrapper>
         <div id='contact'>
-          <Title>Contact</Title>
-
+          <Contact />
         </div>
       </SectionWrapper>
+      <Footer />
     </>
   )
 }

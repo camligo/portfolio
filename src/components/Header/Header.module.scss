@@ -1,8 +1,12 @@
 @use "../../styles/mixins.scss" as m;
 
-.navTop {
-  @include m.phone {
-    display: none;
+.header {
+  background: black;
+  
+  .navTop {
+    @include m.phone {
+      display: none;
+    }
   }
 }
 

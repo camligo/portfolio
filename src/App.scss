@@ -3,4 +3,18 @@
   height: 100%;
   align-items: center;
   justify-content: flex-start;
+  height: 100vh;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+}
+
+#contact, #skills {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }

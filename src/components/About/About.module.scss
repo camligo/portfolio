@@ -1,0 +1,13 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  flex-wrap: wrap;
+  align-content: center;
+  line-height: 1.2;
+
+  .aboutText {
+    display: block;
+    padding-block: 0.4rem;
+  }
+}

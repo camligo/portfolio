@@ -1,0 +1,10 @@
+.iconsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+  gap: 1rem;
+
+  .icon {
+    font-size: 40px;
+  }
+}
