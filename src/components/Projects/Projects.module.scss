@@ -1,3 +1,10 @@
 .projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 75px;
+
+  #projectsHeading {
+    text-align: center;
+  }
 }

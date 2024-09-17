@@ -43,7 +43,7 @@ const Projects = () => {
 
   return (
     <div className={styles.projectsContainer}>
-      <Title textAlign="center">Projects</Title>
+      <Title textAlign="center" id="projectsHeading">Projects</Title>
       {projectsData.map((project, index) => (
         <ProjectCard
           key={index}

@@ -1,10 +1,13 @@
 import Title from "../Title/Title"
 import styles from "./About.module.scss"
+import portrait from "../../assets/portrait.jpg"
 
 const About = () => {
   return (
     <div className={styles.aboutContainer}>
-      <Title textAlign="left">About me</Title>
+      <Title>About me</Title>
+      <div className={styles.flexContent}>
+        <img src={portrait} alt="Portrait" className={styles.photo} />
         <p>
           <span className={styles.aboutText}>
             I'm Camilla, an urban planner turned junior web developer based in Sydney.
@@ -20,6 +23,7 @@ const About = () => {
           </span>
         </p>
       </div>
+    </div>
   )
 }
 

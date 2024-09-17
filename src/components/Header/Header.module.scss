@@ -1,8 +1,8 @@
 @use "../../styles/mixins.scss" as m;
 
 .header {
-  background: black;
-  
+  background: #392f5a;
+
   .navTop {
     @include m.phone {
       display: none;

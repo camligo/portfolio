@@ -1,6 +1,12 @@
+@use "../../styles/variables.scss" as v;
+
 footer {
-  background: black;
+  background: #392f5a;
   color: white;
   padding: 20px;
   text-align: center;
+
+  .footerText {
+    font-family: v.$font;
+  }
 }

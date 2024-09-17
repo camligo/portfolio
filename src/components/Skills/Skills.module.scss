@@ -1,21 +1,33 @@
 @use "../../styles/mixins.scss" as m;
+@use "../../styles/variables.scss" as v;
 
 .iconsContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   list-style-type: none;
   gap: 3rem;
-  padding-top: 10px;
+  padding-top: 25px;
 
   @include m.phone {
-    gap: 2rem;
+    gap: 1.6rem;
   }
 
   .icon {
     font-size: 60px;
+    color: #0e103d;
 
     @include m.phone {
       font-size: 40px;
+    }
+  }
+
+  .skillContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .skillTitle {
+      font-family: v.$font;
     }
   }
 }

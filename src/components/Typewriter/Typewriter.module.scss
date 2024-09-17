@@ -1,21 +1,26 @@
 @use "../../styles/variables.scss" as v;
 @use "../../styles/mixins.scss" as m;
 
-h1 {
-  font-family: v.$fontHeading;
-  font-weight: 100;
-  letter-spacing: 8px;
-
-  @include m.laptop {
-    font-size: 50px;
-  }
-}
 
 .textContainer {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
   letter-spacing: 1.4px;
+
+  h1 {
+    font-family: v.$fontHeading;
+    font-weight: 100;
+    letter-spacing: 8px;
+
+    @include m.phone {
+      font-size: 24px;
+    }
+
+    @include m.laptop {
+      font-size: 50px;
+    }
+  }
 }
 
 #cursor {

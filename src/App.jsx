@@ -1,5 +1,4 @@
 import SectionWrapper from './components/SectionWrapper/SectionWrapper'
-import Title from './components/Title/Title'
 import './App.scss'
 import Header from './components/Header/Header'
 import Typewriter from './components/Typewriter/Typewriter'

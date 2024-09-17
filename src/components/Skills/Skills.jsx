@@ -12,18 +12,54 @@ const Skills = () => {
     <>
       <Title>Skills</Title>
       <ul className={styles.iconsContainer}>
-        <li className={styles.icon}><FaReact /></li>
-        <li className={styles.icon}><FaJava /></li>
-        <li className={styles.icon}><SiSpring /></li>
-        <li className={styles.icon}><IoLogoJavascript /></li>
-        <li className={styles.icon}><BiLogoTypescript /></li>
-        <li className={styles.icon}><FaHtml5 /></li>
-        <li className={styles.icon}><FaSass /></li>
-        <li className={styles.icon}><GrMysql /></li>
-        <li className={styles.icon}><SiRubyonrails /></li>
-        <li className={styles.icon}><DiRuby /></li>
-        <li className={styles.icon}><FaAws /></li>
-        <li className={styles.icon}><FaGitAlt /></li>
+        <div className={styles.skillContainer}>
+          <li className={styles.icon}><FaReact /></li>
+          <small className={styles.skillTitle}>React</small>
+        </div>
+        <div className={styles.skillContainer}>
+          <li className={styles.icon}><FaJava /></li>
+          <small className={styles.skillTitle}>Java</small>
+        </div>
+        <div className={styles.skillContainer}>
+          <li className={styles.icon}><SiSpring /></li>
+          <small className={styles.skillTitle}>Spring</small>
+        </div>
+        <div className={styles.skillContainer}>
+          <li className={styles.icon}><IoLogoJavascript /></li>
+          <small className={styles.skillTitle}>JavaScript</small>
+        </div>
+        <div className={styles.skillContainer}>
+          <li className={styles.icon}><BiLogoTypescript /></li>
+          <small className={styles.skillTitle}>TypeScript</small>
+        </div>
+        <div className={styles.skillContainer}>
+          <li className={styles.icon}><FaHtml5 /></li>
+          <small className={styles.skillTitle}>HTML</small>
+        </div>
+        <div className={styles.skillContainer}>
+          <li className={styles.icon}><FaSass /></li>
+          <small className={styles.skillTitle}>Sass</small>
+        </div>
+        <div className={styles.skillContainer}>
+          <li className={styles.icon}><GrMysql /></li>
+          <small className={styles.skillTitle}>MySQL</small>
+        </div>
+        <div className={styles.skillContainer}>
+          <li className={styles.icon}><DiRuby /></li>
+          <small className={styles.skillTitle}>Ruby</small>
+        </div>
+        <div className={styles.skillContainer}>
+          <li className={styles.icon}><SiRubyonrails /></li>
+          <small className={styles.skillTitle}>Rails</small>
+        </div>
+        <div className={styles.skillContainer}>
+          <li className={styles.icon}><FaAws /></li>
+          <small className={styles.skillTitle}>AWS</small>
+        </div>
+        <div className={styles.skillContainer}>
+          <li className={styles.icon}><FaGitAlt /></li>
+          <small className={styles.skillTitle}>Git</small>
+        </div>
       </ul>
     </>
   )

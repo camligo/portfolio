@@ -16,18 +16,38 @@
 #about {
   display: flex;
   justify-content: center;
-  height: 50vh;
-  background: antiquewhite;
+  height: 40vh;
   width: 100%;
+
+  @include m.phone {
+    height: 80vh;
+  }
 }
 
-#contact, #skills {
+#skills {
   height: 50vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+
+  @include m.phone {
+    height: 60vh;
+  }
 }
+
+#contact {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  @include m.phone {
+    height: 40vh;
+  }
+}
+
 
 p {
   font-family: v.$font;
