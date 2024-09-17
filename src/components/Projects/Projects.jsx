@@ -3,6 +3,9 @@ import styles from "./Projects.module.scss"
 import phone from "../../assets/phone.png"
 import laptop from "../../assets/laptop.png"
 import Title from "../Title/Title"
+import bookfinder from "../../assets/bookfinder.png"
+import eshop from "../../assets/eshop.png"
+import morse from "../../assets/morse.png"
 
 const Projects = () => {
   const projectsData = [
@@ -16,23 +19,23 @@ const Projects = () => {
     },
     {
       title: 'React E-shop',
-      img: phone,
+      img: eshop,
       description: 'Online grocery store built with React JS. The product data is stored in Firebase.',
       githubLink: "https://github.com/camligo/e-shop",
-      liveLink: "",
-      mockupType: "phone"
-    },
-    {
-      title: 'BookFinder',
-      img: laptop,
-      description: 'Search for your next read. A user is able to search for a book inside the Google Books database and can get more details about a certain title.',
-      githubLink: "https://github.com/camligo/google-books",
       liveLink: "",
       mockupType: "laptop"
     },
     {
+      title: 'BookFinder',
+      img: bookfinder,
+      description: 'Search for your next read. A user is able to search for a book inside the Google Books database and can get more details about a certain title.',
+      githubLink: "https://github.com/camligo/google-books",
+      liveLink: "",
+      mockupType: "phone"
+    },
+    {
       title: 'Morse code translator',
-      img: laptop,
+      img: morse,
       description: 'Simple translator built with vanilla JavaScript and SCSS.',
       githubLink: "https://github.com/camligo/morse-code-translator",
       liveLink: "",
